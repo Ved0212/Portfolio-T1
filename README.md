@@ -6,7 +6,7 @@ In these virtual halls, you will find a collection of my works spanning from the
 
 
 
-## Table of Contents
+## 🎯Table of Contents
 
 - [Demo](#demo)
 - [Features](#features)
@@ -43,7 +43,7 @@ Provide a link to the live demo of your portfolio. <br> <img src="https://media.
 [![My Skills](https://skillicons.dev/icons?i=vscode,html,css,js,bootstrap,jquery)](https://skillicons.dev)
 
 
-## Installation 
+## 💻Installation 
 - [Install Vscode](https://code.visualstudio.com/)
 - [Extenisons] Html,CSS,JS
 - [Bootstrap] for css framework
