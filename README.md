@@ -15,9 +15,9 @@ In these virtual halls, you will find a collection of my works spanning from the
 
 ## Demo        
 Provide a link to the live demo of your portfolio. <br> <img src="https://media.giphy.com/media/VgCDAzcKvsR6OM0uWg/giphy.gif" width="50">
-[Deployment Link] 
+[Deployment Link](https://ved0212.github.io/My-Portfolio/)
 
-[Live Demo](#your-live-demo-link)
+
 
 ## Features
 
