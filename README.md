@@ -1,4 +1,4 @@
-# # 📜 Introduction
+## 📜 Introduction
 
 A personal portfolio showcasing my projects and skills, built with HTML, CSS, JavaScript, jQuery, and Bootstrap .
 Welcome to my digital retreat, a selected area where creativity meets functionality and innovation intersects with design. I am glad to welcome you to my portfolio website, which provides a virtual insight into the tapestry of my abilities, experiences, and interests.
