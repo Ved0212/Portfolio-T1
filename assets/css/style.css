@@ -98,32 +98,35 @@ html,body{
 }
 @media (min-width: 1024px){}
 nav.navbar.bootsnav.no-background {
-    background: linear-gradient(to right, #000000, #313131);
+    background: transparent;
     border: none;
 }
 
 nav.navbar.bootsnav {
-    background-color:lightgrey;
-    border-bottom: transparent;
+  background: linear-gradient(to bottom, #ffe259, #ffa751); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        border-bottom: transparent;
     box-shadow: 0 3px 15px rgba(0,0,0,.2);
 }
 
 /*.navbar-brand*/
 .navbar-header a.navbar-brand,.navbar-header a.navbar-brand:hover,.navbar-header a.navbar-brand:focus {
     display: inline-block;
-    color: #ff9901;
-    font-size: 30px;
-    font-weight: 600;
+    color: #ffffff;
+    font-size: 25px;
+    font-weight:600;
+    letter-spacing: 2px;
     padding: 33px 0px 57px;
     text-transform: uppercase;
-    font-family: 'Katibeh', cursive;
+      font-family: "Rubik Wet Paint", system-ui;
+  
+    font-style: normal;
    
 }
 /*.navbar-brand*/
 
 /*.nav li*/
 nav.navbar.bootsnav ul.nav > li > a {
-    color: #ff9901;
+    color: #01f7ff;
     font-size: 16px;
     font-weight: 500;
     text-transform:uppercase;
@@ -144,7 +147,7 @@ nav.navbar.bootsnav ul.nav > li.dropdown span {
     margin-left: 15px;
 }
 .sticky-wrapper.is-sticky nav.navbar.bootsnav ul.nav > li > a {color:#000000;}
-.sticky-wrapper.is-sticky nav.navbar.bootsnav ul.nav > li > a:hover,.sticky-wrapper.is-sticky nav.navbar.bootsnav ul.nav > li > a:focus,.sticky-wrapper.is-sticky nav.navbar.bootsnav ul.nav > li.active>a{color: #ffffff;}
+.sticky-wrapper.is-sticky nav.navbar.bootsnav ul.nav > li > a:hover,.sticky-wrapper.is-sticky nav.navbar.bootsnav ul.nav > li > a:focus,.sticky-wrapper.is-sticky nav.navbar.bootsnav ul.nav > li.active>a{color: #00fbff;}
 /*.nav li*/
 
 
@@ -184,35 +187,47 @@ nav.navbar.bootsnav .navbar-toggle i{color: #000000;}
     display: flex;
     align-items: center;
     justify-content: center;
-    position:relative;
-    background:url(../images/about/lake-5990540_1920.jpg)no-repeat;
-    background-size:cover;
+    position: relative;
+    background: url(../images/about/top-view-agenda-glasses-pencil.jpg) no-repeat;
+    background-size: cover;
     background-position: center;
-    height:890px;
+    height: 750px;
+    overflow: hidden;
 }
-.welcome-hero:before{
-    position:absolute;
-    content: " ";
-    top:0;
-    left:0;
-    background:rgba(207, 209, 218, 0.65);
-    width:100%;
-    height:100%;
+.welcome-hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: inherit;
+    filter: blur(5px);
+    z-index: 0;
+}
+.welcome-hero > * {
+    position: relative;
+    z-index: 1;
+}
+.header-text {
+    text-align: center;
+    padding: 0 20px;
 }
 
 /*.header-text-area*/
 .header-text h2 {
-    font-family: 'Monoton', cursive;
+    font-family: "Rubik Wet Paint", system-ui;
     font-weight: 500;
-    color: #000000;
-    font-size: 54px;
+    color: #ffffff;
+    font-size: 55px;
     letter-spacing: 5px;
     text-transform: uppercase;
     line-height: 1.5;
 }
-.header-text h2 span {color: #ff0000;}
+.header-text h2 span {color: #00fff7;}
+.header-text h2 span:first-child {
+    color: #00f7ff;
+    font-size: 60px;
+}
 .header-text p {
-    color: #020202;
+    color: #646464;
     font-size: 20px;
     font-weight: 600;
     text-transform: uppercase;
@@ -247,30 +262,57 @@ nav.navbar.bootsnav .navbar-toggle i{color: #000000;}
 /*-------------------------------------
         4.  About
 --------------------------------------*/
-.about {padding: 50px 0 100px;}
+.about {
+    position: relative;
+    padding: 50px 0 100px;
+    background: url(../images/about/digital-camera-cellphone-stationery-yellow-background.jpg) center center no-repeat;
+    background-size: cover;
+}
+.about::before {
+     content: "";
+    position: absolute;
+    inset: 0;
+    background: inherit;
+    filter: blur(10px);
+    z-index: 0;
+    
+}
+.about > * {
+    position: relative;
+    z-index: 1;
+    
+}
 .about-content {padding-top: 100px;}
 /*.single-about-txt*/
 .single-about-txt h3 {
     font-size:18px;
-    color: gray;
-   text-transform: initial;
+    color: rgb(255, 255, 255);
+    text-transform: initial;
     line-height: 1.8;
 }
 .single-about-txt p {
-    font-size: 16px;
-    color: #425db6;
+    font-size:17px;
+    color: #000000;
     padding: 35px 0 43px;
-    border-bottom: 1px solid #999fb3;
+    border-bottom: 1px solid #000000;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 500;
 }
 .single-about-add-info {
     margin: 35px 0;
 }
 .single-about-add-info h3 {
-    color: #636a82;
+    color: #000000;
     font-size: 16px;
     text-transform: capitalize;
 }
-.single-about-add-info p {font-weight:  300;border:  0;padding: 0;margin-top: 3px;}
+.single-about-add-info p {font-weight:  300;border:  0;padding: 0;margin-top: 3px; color: #000000;}
+.single-about-add-info p a {
+    color: #000000;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: small;
+}
 /*.single-about-txt*/
 
 /*.single-about-img */
@@ -282,11 +324,11 @@ nav.navbar.bootsnav .navbar-toggle i{color: #000000;}
     left:  0;
     width:109%;
     height:  100%;
-    background: rgba(224, 224, 224, 0.24);
+    
 }
 .single-about-img img {
-    max-width: 490px;
-    height: 465px;
+    max-width: 500px;
+    height: 560px;
     
 }
 .about-list-icon{
@@ -298,7 +340,8 @@ nav.navbar.bootsnav .navbar-toggle i{color: #000000;}
     left: 0;
     width: 109%;
     height: 90px;
-    background: linear-gradient(to right, #000000, #434343); 
+   
+   
 }
 /*.ab-list-icon */
 .about-list-icon ul {
@@ -311,7 +354,7 @@ nav.navbar.bootsnav .navbar-toggle i{color: #000000;}
 }
 .about-list-icon ul li a {
     cursor: pointer;
-    color: #00ffff;
+    color: #ffffff;
     display: inline-block;
     border: 2px solid;
     margin-left: 20px;
@@ -333,17 +376,55 @@ nav.navbar.bootsnav .navbar-toggle i{color: #000000;}
 --------------------------------------*/
 
 .education {
-    background: linear-gradient(to right, #000000, #434343); 
-    padding-top:  50px;
+    position: relative;
+    background: url(../images/about/top-view-agenda-glasses-pencil.jpg) center center no-repeat;
+    background-size: cover;
+    padding-top: 50px;
+    overflow: hidden;
+    height: 70vh;
 }
-
+.education::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: inherit;
+    filter: blur(5px);
+    z-index: 0;
+}
+.education > * {
+    position: relative;
+    z-index: 1;
+}
+  
 .education-horizontal-timeline {
     padding: 80px 0;
 }
 
 /*.education-horizontal-timeline*/
-.education-horizontal-timeline .col-sm-4 {padding:0 2px;}
-
+.education-horizontal-timeline .col-sm-4 {
+    padding: 0 2px;
+    color: #000000;
+}
+.education-horizontal-timeline .experience-time {
+    position: relative;
+    padding: 0 20px;
+    text-align: center;
+}
+.education-horizontal-timeline .experience-time h2 {
+    font-size: 16px;
+    font-weight: 300;
+    color: #ffffff;
+    margin-bottom: 10px;
+    
+}
+.education-horizontal-timeline .experience-time h3 {
+    font-size: 18px;
+    font-weight: 300;
+    color: #00fbff;
+    margin-top: 14px;
+    font-family: "Crimson Text", serif;
+    text-transform: uppercase;
+}
 .single-horizontal-timeline .experience-time h3{text-transform: capitalize;}
 .single-horizontal-timeline .experience-time h3 span{text-transform:lowercase;}
 .single-horizontal-timeline .timeline-content h5 {margin: 15px 0;}
@@ -357,17 +438,45 @@ nav.navbar.bootsnav .navbar-toggle i{color: #000000;}
 }
 .timeline-horizontal-border i {
     font-size:  12px;
-    color: #00ccff;
+    color: #ffffff;
     margin-right:  5px;
 }
 span.single-timeline-horizontal {
     display:  inline-block;
-    background: #f0ecec;
+    background: #e8e8e8;
     height:  1px;
     width: 400px;
 }
-span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
+span.single-timeline-horizontal.spacial-horizontal-line {width: 100rem;}
 
+.skills{
+    position: relative;
+    background: url(../images/about/digital-camera-cellphone-stationery-yellow-background.jpg) center center no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+.skills::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: inherit;
+    filter: blur(5px);
+    z-index: 0;
+    animation: skillsBlurAnim 3s ease-in-out infinite alternate;
+}
+@keyframes skillsBlurAnim {
+    0% { filter: blur(5px) brightness(1); }
+    100% { filter: blur(8px) brightness(1.1); }
+}
+.skills > * {
+    position: relative;
+    z-index: 1;
+    animation: skillsFadeIn 1.5s ease;
+}
+@keyframes skillsFadeIn {
+    from { opacity: 0; transform: translateY(30px);}
+    to { opacity: 1; transform: translateY(0);}
+}
 .skill-content{padding: 50px 0 80px;}
 .single-skill-content{padding-top: 100px;}
 .section-heading h2 {
@@ -375,22 +484,28 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
     font-weight: 700;
     text-transform: uppercase;
     padding-bottom: 50px;
-    border-bottom: 1px solid #e5ebf2;
+    border-bottom: 1px solid #000000;
+    
 }
 .single-progress-txt {
     display: flex;
 }
 .single-progress-txt h3 {
     width: 10%;
-    color: #006eff;
+    color: #000000;
     position: relative;
     top: 6px;
     left: 20px;
+    font-family: "Crimson Text", serif;
+
 }
 .barWrapper {
-    font-weight: 400;
+    font-weight: 700;
     font-size: 16px;
     text-transform: uppercase;
+    color: rgb(0, 0, 0);
+      font-family: "Crimson Text", serif;
+
 }
 .progress {
     border-radius:3px;
@@ -401,9 +516,9 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
     width: 85%;
     margin-bottom: 37px;
 }
+/* Linear progress bar style */
 .progress-bar {
-   background: #006eff;
-    border-radius: 3px;
+    background: linear-gradient(90deg, #00fffb 0%, #00bfff 100%);
    -webkit-transition: width 1.5s ease-in-out;
    -ms-transition: width 1.5s ease-in-out;
    -moz-transition: width 1.5s ease-in-out;
@@ -437,7 +552,33 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
 .experience {
     padding: 50px 0 100px;
     border-top: 1px solid #e5ebf2;
-    background: linear-gradient(to right, #000000, #434343); 
+    background: url(../images/about/top-view-agenda-glasses-pencil.jpg) center center no-repeat;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
+.experience::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: inherit;
+    filter: blur(7px) brightness(1.05);
+    z-index: 0;
+    opacity: 0.85;
+    animation: experienceBlurAnim 3s ease-in-out infinite alternate;
+}
+@keyframes experienceBlurAnim {
+    0% { filter: blur(7px) brightness(1.05);}
+    100% { filter: blur(10px) brightness(1.1);}
+}
+.experience > * {
+    position: relative;
+    z-index: 1;
+    animation: experienceFadeIn 1.2s ease;
+}
+@keyframes experienceFadeIn {
+    from { opacity: 0; transform: translateY(20px);}
+    to { opacity: 1; transform: translateY(0);}
 }
 .experience-content {padding-top: 100px;}
 .single-timeline-box {margin-bottom: 75px;}
@@ -451,10 +592,12 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
 }
 .experience-time h3 {
     font-size: 16px;
-    font-weight: 300;
-    color: #0077ff;
+    font-weight: 500;
+    color: #ffffff;
     margin-top: 14px;
     text-transform: uppercase;
+      font-family: "Crimson Text", serif;
+
 }
 /*experience-time*/
 
@@ -466,7 +609,7 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
     content: "";
     width: 2px;
     height: 84%;
-    background: #b2c1ce;
+    background: #00fff7;
     position: absolute;
     top: 1.5%;
     left: 45.8%;
@@ -477,7 +620,7 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
 }
 
 .timeline-content span>i, .experience-time span>i {
-    color: #006eff;
+    color: #ffffff;
     position: absolute;
     font-size: 10px;
     left: -14.5%;
@@ -489,7 +632,7 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
     text-transform: uppercase;
 }
 .timeline-content h5 {
-    color: #006eff;
+    color: #00fff7;
     font-size: 14px;
     font-weight: 300;
     margin: 18px 0 20px;
@@ -518,7 +661,23 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
 --------------------------------------*/
 .profiles {
     padding:  50px 0 100px;
-    border:  1px solid #e5ebf2;
+    border:  1px solid #000000;
+    background: url(../images/about/digital-camera-cellphone-stationery-yellow-background.jpg) center center no-repeat;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
+.profiles::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: inherit;
+    filter: blur(10px);
+    z-index: 0;
+}
+.profiles > * {
+    position: relative;
+    z-index: 1;
 }
 
 .profiles-content {padding-top: 100px;}
@@ -544,8 +703,10 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
 }
 .profile-icon-name {
     text-transform: capitalize;
-    color: #636a82;
+    color: #000000;
     font-size: 16px;
+    font-family: "Crimson Text", serif;
+    font-weight: 500;
 }
 .single-profile.profile-no-border{border-right:transparent;}
 .profile-border {
@@ -562,7 +723,9 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
     content: " ";
     width:100%;
     height: 100%;
-    background: linear-gradient(to right, #c6ffdd, #fbd786, #f7797d); 
+    background: #ffe259;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #ffa751, #ffe259);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #ffa751, #ffe259); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d92cf9', endColorstr='#b636ff',GradientType=1 );
@@ -591,11 +754,27 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
         9. Portfolio
 --------------------------------------*/
 #portfolio{
-    background: linear-gradient(to right, #000000, #434343);
+    background: url(../images/about/top-view-agenda-glasses-pencil.jpg) center center no-repeat;
+    background-size: cover;
 }
 .portfolio {
     padding:  50px 0 100px;
-    border:  1px solid #e5ebf2;
+    position: relative;
+    overflow: hidden;
+    }
+    .portfolio::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: inherit;
+        filter: blur(8px);
+        z-index: 0;
+    }
+    .portfolio > * {
+        position: relative;
+        z-index: 1;
+   
+
 }
 
 .portfolio-content {padding-top: 100px;}
@@ -670,7 +849,25 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
         10. Clients
 --------------------------------------*/
 
-.clients {padding-top: 50px;}
+.clients {
+    padding-top: 50px;
+    background: url(../images/about/digital-camera-cellphone-stationery-yellow-background.jpg) center center no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+}
+.clients::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: inherit;
+    filter: blur(5px);
+    z-index: -1;
+}
+.clients > * {
+    position: relative;
+    z-index: 1;
+}
 .clients-area {
     display: flex;
     align-items: center;
@@ -689,8 +886,22 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
         11. Contact
 --------------------------------------*/
 .contact {
-    background: linear-gradient(to right, #000000, #434343);
+    background: url(../images/about/top-view-agenda-glasses-pencil.jpg) center center no-repeat;
+    background-size: cover;
+    position: relative;
     padding: 50px 0 100px;
+}
+.contact::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: inherit;
+    filter: blur(8px);
+    z-index: 0;
+}
+.contact > * {
+    position: relative;
+    z-index: 1;
 }
 .single-contact-box {padding-top: 100px;}
 .contact-form  .form-group {
@@ -717,8 +928,8 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
     height:50px;
     text-transform:capitalize;
     margin-top: 3px;
-    background: #364aff;
-    border: 1px solid #364aff;
+    background: #36fff2;
+   
     cursor:pointer;
     box-shadow: 0 5px 20px rgba(0,0,0,.2);
      -webkit-transition: .5s; 
@@ -758,7 +969,7 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
 .contact-add-head p {
     font-size:  16px;
     text-transform: capitalize;
-    color:  #073dee;
+    color:  #00ffd9;
     font-weight:  300;
     margin-top:  6px;
 }
@@ -771,7 +982,7 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
     font-weight:  500;
 }
 .single-contact-add-info p {
-    color:  #003cff;
+    color:  #00fbff;
     font-size:  16px;
     margin-top:  18px;
 }
@@ -781,7 +992,19 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
 /*.contact-add-info */
 
 /*hm-foot-icon*/
-
+.footer-copyright{
+    position: relative;
+    padding: 2px 0;
+    text-align: center;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 500;
+    background: linear-gradient(to bottom, #ffa751, #ffe259); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.footer-copyright p {
+    margin: 0;
+}
+/* End of .footer-copyright styles */
 .hm-foot-icon ul li{float:left;}
 .hm-foot-icon ul li>a {
     color: #ffffff;
@@ -793,7 +1016,7 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
     transition: .3s;
 }
 .hm-foot-icon ul li>a:hover{
-    color: #09ff00;
+    color: #00ffdd;
 }/*hm-foot-icon*/
 
 .hm-footer-copyright p{
@@ -817,8 +1040,8 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
     font-size: 20px;
     cursor: pointer;
     color: #000000;
-    background:#003cff;
-	border:1px solid #00d9ff;
+    background:#00f7ff;
+	border:1px solid #000000;
 	border-radius:50%;
 	-webkit-transition: .5s; 
 	-moz-transition:.5s; 

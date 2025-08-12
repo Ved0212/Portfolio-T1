@@ -123,8 +123,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const downloadButton = document.getElementById("downloadButton");
     downloadButton.addEventListener("click", function() {
         // Replace 'resume.pdf' with the actual file path or URL of your resume
-        const resumeUrl = 'PRADYUM PARMAR.pdf';
-
+		const resumeUrl = 'assets/files/PRADYUM.pdf'; // Update this path to your actual resume file location
         // Create a hidden anchor element to trigger the download
         const anchor = document.createElement("a");
         anchor.style.display = "none";
