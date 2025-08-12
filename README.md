@@ -18,19 +18,18 @@ In these virtual halls, you will find a collection of my works spanning from the
 Provide a link to the live demo of your portfolio. <br> <img src="https://media.giphy.com/media/VgCDAzcKvsR6OM0uWg/giphy.gif" width="50">
 [Deployment Link](https://ved0212.github.io/My-Portfolio/)
 
-## Screenshots
-![Screenshot (1)](https://github.com/Ved0212/My-Portfolio/assets/152055524/d2fb949d-c120-4493-8fbf-f711c4a6ead2)
-![Screenshot (2)](https://github.com/Ved0212/My-Portfolio/assets/152055524/bbde6864-cd26-47d4-9c28-ad329006e228)
-![Screenshot (3)](https://github.com/Ved0212/My-Portfolio/assets/152055524/35ccda2d-df0e-424b-ab89-6cfb72cbcdb9)
-![Screenshot (4)](https://github.com/Ved0212/My-Portfolio/assets/152055524/dc98979f-989b-495f-99ff-0f42bc0fd663)
-![Screenshot (5)](https://github.com/Ved0212/My-Portfolio/assets/152055524/40cf26e8-ec5d-422b-bdf9-3eef69ecffce)
-![Screenshot (6)](https://github.com/Ved0212/My-Portfolio/assets/152055524/1be736cb-f1ee-4a38-9418-b20b2eba461c)
-![Screenshot (7)](https://github.com/Ved0212/My-Portfolio/assets/152055524/98183e19-1d60-45e9-a049-c61e078e6bf5)
-![Screenshot (8)](https://github.com/Ved0212/My-Portfolio/assets/152055524/1aa73184-2780-4112-b82b-c4154c058598)
-![Screenshot (9)](https://github.com/Ved0212/My-Portfolio/assets/152055524/5a4c73b9-2df3-4f6d-ab5c-3dd0ce9b85f6)
-![Screenshot (10)](https://github.com/Ved0212/My-Portfolio/assets/152055524/d37edca3-e3b8-4a09-8f2d-7e1a867cd74b)
-![Screenshot (11)](https://github.com/Ved0212/My-Portfolio/assets/152055524/707d894d-d4d2-4edd-b307-f3da26222ff1)
-![Screenshot (12)](https://github.com/Ved0212/My-Portfolio/assets/152055524/312c993d-7a6d-4307-ae64-867b4ff19ee4)
+## Screenshots 
+<img width="1912" height="883" alt="image" src="https://github.com/user-attachments/assets/c6c7744a-fb72-4053-9d12-c0fe5bcfde25" />
+<img width="1892" height="872" alt="image" src="https://github.com/user-attachments/assets/5f9dfae8-b7c3-4da5-9393-f1796535f71f" />
+<img width="1876" height="875" alt="image" src="https://github.com/user-attachments/assets/6a4f2fb8-f61e-4464-9980-d2cd78eb987a" />
+<img width="1892" height="805" alt="image" src="https://github.com/user-attachments/assets/c1233a2a-c61e-4ec2-bd17-b35bbe666806" />
+<img width="1885" height="877" alt="image" src="https://github.com/user-attachments/assets/35199867-4e42-4b3a-894c-5dc5d1ac043b" />
+<img width="1873" height="867" alt="image" src="https://github.com/user-attachments/assets/456d50c4-2f72-4127-a2c7-fdf67e3453c1" />
+<img width="1887" height="782" alt="image" src="https://github.com/user-attachments/assets/b22a9212-551d-4db1-a528-2ebff0570c3e" />
+<img width="1882" height="876" alt="image" src="https://github.com/user-attachments/assets/b6a7f8fb-e885-4b37-8168-a2faedb2b9b7" />
+<img width="1876" height="886" alt="image" src="https://github.com/user-attachments/assets/c9fd7905-834a-45d0-bde7-d3a54238fa3b" />
+<img width="1897" height="872" alt="image" src="https://github.com/user-attachments/assets/ec950bfd-3550-4350-ba5f-3e0d15b7f92e" />
+
 
 ## Features
 
