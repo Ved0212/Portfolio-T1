@@ -1,6 +1,6 @@
 <!-- Header Banner -->
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:1E90FF,100:00CED1&height=230&section=header&text=Personal%20Portfolio%20Website&fontSize=38&fontColor=ffffff&animation=fadeIn&fontAlignY=40" alt="header"/>
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:1E90FF,100:00CED1&height=230&section=header&text=Portfolio%20Website&fontSize=38&fontColor=ffffff&animation=fadeIn&fontAlignY=40" alt="header"/>
 </p>
 
 <p align="center">
